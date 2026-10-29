@@ -1,0 +1,11 @@
+# Environment
+.env
+.env.local
+
+# Uploads
+/uploads/*
+!/uploads/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
