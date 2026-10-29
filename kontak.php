@@ -6,6 +6,7 @@ $setting = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM tb_settings LIMI
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kontak Kami</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -18,7 +19,18 @@ $setting = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM tb_settings LIMI
       <a href="kontak.php">Kontak</a>
       <a href="admin/login.php" class="btn-nav">Login</a>
     </nav>
+    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+    <a href="index.php" onclick="toggleMobileMenu()">Beranda</a>
+    <a href="paket.php" onclick="toggleMobileMenu()">Paket</a>
+    <a href="kontak.php" onclick="toggleMobileMenu()">Kontak</a>
+    <a href="admin/login.php" onclick="toggleMobileMenu()">Login</a>
+  </div>
+  <script>function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }</script>
 
   <section>
     <div class="container card">
