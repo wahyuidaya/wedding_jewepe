@@ -35,7 +35,14 @@ $paket = mysqli_query($conn,"SELECT * FROM tb_catalogues WHERE status_publish='Y
   <script>function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }</script>
 
   <!-- Hero -->
-  <div class="hero" style="background:url('uploads/<?php echo $setting['logo']; ?>') center/cover no-repeat;">
+  <?php 
+$hero_bg = 'uploads/' . $setting['logo'];
+if (empty($setting['logo']) || !file_exists(__DIR__ . '/' . $hero_bg) || $setting['logo'] === 'default_logo.png') {
+    $hero_bg = 'uploads/pexels-photo-265947.jpeg';
+}
+?>
+  <!-- Hero -->
+  <div class="hero" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('<?php echo $hero_bg; ?>') center/cover no-repeat; color: #fff;">
     <div>
       <h1>Selamat Datang di <?php echo $setting['website_name']; ?></h1>
     </div>
