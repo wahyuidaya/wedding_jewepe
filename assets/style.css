@@ -597,8 +597,10 @@ td a.btn-approve:hover {
 /* ===== Responsive Design ===== */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    padding: 1rem;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 1rem 1.25rem !important;
   }
 
   .navbar nav {
@@ -711,10 +713,18 @@ td a.btn-approve:hover {
 }
 
 @media (max-width: 768px) {
-  /* Navbar hamburger */
+  /* Navbar hamburger di pojok kanan sejajar logo */
   .navbar nav { display: none; }
-  .hamburger { display: flex; }
-  .navbar { flex-wrap: wrap; }
+  .hamburger {
+    display: flex !important;
+    margin-left: auto;
+  }
+  .navbar {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
 
   /* Hero */
   .hero { height: 300px; }
