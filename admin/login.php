@@ -54,7 +54,6 @@ if(isset($_POST['login'])){
   <div class="demo-banner">
     <div style="margin-bottom: 6px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
       <a href="../portal.php" class="back-link" style="color: #6ee7b7; font-weight: 700;">← Kembali ke Portal Wedding Jewepe</a>
-      <a href="https://wahyuidaya.github.io" class="back-link">Portofolio Wahyu Idaya ↗</a>
     </div>
     <strong>🔐 Demo Admin — Klik untuk mengisi otomatis:</strong><br>
     <button class="demo-btn" onclick="fillDemo('admin','admin123')">👑 Login sebagai Admin</button>

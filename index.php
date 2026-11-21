@@ -19,7 +19,7 @@ $paket = mysqli_query($conn,"SELECT * FROM tb_catalogues WHERE status_publish='Y
       <a href="index.php">Beranda</a>
       <a href="paket.php">Paket</a>
       <a href="kontak.php">Kontak</a>
-      <a href="admin/login.php" class="btn-nav">Login</a>
+      <a href="portal.php" class="btn-nav">Login</a>
     </nav>
     <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -30,7 +30,7 @@ $paket = mysqli_query($conn,"SELECT * FROM tb_catalogues WHERE status_publish='Y
     <a href="index.php" onclick="toggleMobileMenu()">Beranda</a>
     <a href="paket.php" onclick="toggleMobileMenu()">Paket</a>
     <a href="kontak.php" onclick="toggleMobileMenu()">Kontak</a>
-    <a href="admin/login.php" onclick="toggleMobileMenu()">Login</a>
+    <a href="portal.php" onclick="toggleMobileMenu()">Login</a>
   </div>
   <script>function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }</script>
 
