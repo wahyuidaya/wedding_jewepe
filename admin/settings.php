@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include '_auth.php';
 $data = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM tb_settings LIMIT 1"));
 
@@ -41,6 +41,7 @@ if(isset($_POST['save'])){
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Manajemen Profil Web</title>
   <link rel="stylesheet" href="../assets/style.css">
@@ -84,3 +85,4 @@ if(isset($_POST['save'])){
 </div>
 </body>
 </html>
+

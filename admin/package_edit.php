@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include '_auth.php';
 $id = $_GET['id'];
 $data = mysqli_fetch_assoc(mysqli_query($conn,"SELECT * FROM tb_catalogues WHERE catalogue_id='$id'"));
@@ -28,6 +28,7 @@ if(isset($_POST['update'])){
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Edit Paket</title>
   <link rel="stylesheet" href="../assets/style.css">
@@ -60,3 +61,4 @@ if(isset($_POST['update'])){
 </div>
 </body>
 </html>
+

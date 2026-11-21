@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 include '../koneksi_db.php';
 
@@ -20,6 +20,7 @@ if(isset($_POST['login'])){
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Login Admin - Wedding Jewepe</title>
   <link rel="stylesheet" href="../assets/style.css">
@@ -119,3 +120,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </body>
 </html>
+

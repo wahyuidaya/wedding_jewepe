@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 include '_auth.php';
 $total_paket = mysqli_fetch_row(mysqli_query($conn,"SELECT COUNT(*) FROM tb_catalogues"))[0];
 $total_order = mysqli_fetch_row(mysqli_query($conn,"SELECT COUNT(*) FROM tb_order"))[0];
@@ -8,6 +8,7 @@ $requested   = mysqli_fetch_row(mysqli_query($conn,"SELECT COUNT(*) FROM tb_orde
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Dashboard Admin</title>
   <link rel="stylesheet" href="../assets/style.css">
@@ -27,3 +28,4 @@ $requested   = mysqli_fetch_row(mysqli_query($conn,"SELECT COUNT(*) FROM tb_orde
 </div>
 </body>
 </html>
+
